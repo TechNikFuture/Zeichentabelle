@@ -68,7 +68,7 @@ function key_event(key) {
     shift_aktiv = true
     setTimeout(function(){
       shift_aktiv = false
-   }, 300);
+   }, 600);
   }
 
 
