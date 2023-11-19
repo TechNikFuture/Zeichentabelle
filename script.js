@@ -1,27 +1,34 @@
 
 function btn_1() {
   navigator.clipboard.writeText("➜ ");
+  window.close();
 }
 function btn_2() {
   navigator.clipboard.writeText("²");
+  window.close();
 }
 function btn_3() {
   navigator.clipboard.writeText("³");
+  window.close();
 }
 function btn_4() {
   navigator.clipboard.writeText("< ");
+  window.close();
 }
 function btn_5() {
   navigator.clipboard.writeText("> ");
+  window.close();
 }
 
 
 
 function btn_W() {
   navigator.clipboard.writeText("₂");
+  window.close();
 }
 function btn_E() {
   navigator.clipboard.writeText("₃");
+  window.close();
 }
 
 
