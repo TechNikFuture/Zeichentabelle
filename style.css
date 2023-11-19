@@ -69,6 +69,7 @@ margin-right: auto;
 
 /* Buttons */
 .preview-btn {
+  min-width: 50px;
   border: none;
   color: rgb(255, 255, 255);
   padding: 10px 22px;
@@ -98,7 +99,6 @@ margin-right: auto;
 
 .hidden {
   visibility: hidden;
-  display: none;
   z-index: -10;
 }
 
