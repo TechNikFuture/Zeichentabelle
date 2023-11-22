@@ -54,7 +54,7 @@ function btn_S() {
 }
 
 function schließen() {
-  //window.close();
+  window.close();
 }
 
 
