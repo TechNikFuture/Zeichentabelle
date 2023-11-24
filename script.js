@@ -53,6 +53,12 @@ function btn_S() {
   schließen();
 }
 
+function btn_D() {
+  navigator.clipboard.writeText("≈ ");
+  schließen();
+}
+
+
 function schließen() {
   window.close();
 }
@@ -97,6 +103,8 @@ function key_event(key) {
     if (key.keyCode == "65") {btn_A()}
             
     if (key.keyCode == "83") {btn_S()}
+    
+    if (key.keyCode == "68") {btn_D()}
     
 
     }
