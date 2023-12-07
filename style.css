@@ -104,3 +104,17 @@ margin-right: auto;
 
 
 
+.heading {
+  min-width: 50px;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding-left: 3px;
+  text-decoration: underline;
+
+
+  font-family: 'Laila';
+  font-size: 22px;
+
+
+
+}
