@@ -104,7 +104,7 @@ function btn_N() {
 
 
 function schließen() {
-  //window.close();
+  window.close();
 }
 
 
