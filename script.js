@@ -63,6 +63,12 @@ function btn_F() {
   schließen();
 }
 
+function btn_G() {
+  navigator.clipboard.writeText(`✓ `);
+  schließen();
+}
+
+
 
 
 
@@ -99,13 +105,20 @@ function btn_N() {
 
 
 
+seite_nicht_schließen_boolean = 0
 
-
+function nicht_schließen() {
+  seite_nicht_schließen_boolean = 1
+}
 
 
 function schließen() {
-  window.close();
+  if (seite_nicht_schließen_boolean === 0){
+    window.close();
+
+  }
 }
+
 
 
 
@@ -117,6 +130,10 @@ window.addEventListener(`keydown`, key_event, false)
 
 function key_event(key) {
        
+
+  if (key.keyCode == `32`) {nicht_schließen()}
+
+
 
 
     
@@ -151,6 +168,8 @@ function key_event(key) {
     if (key.keyCode == `68`) {btn_D()}
 
     if (key.keyCode == `70`) {btn_F()}
+
+    if (key.keyCode == `71`) {btn_G()}
 
 
 
