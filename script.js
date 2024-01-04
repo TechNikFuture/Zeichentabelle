@@ -19,6 +19,15 @@ function btn_5() {
   navigator.clipboard.writeText(`⁵`);
   schließen();
 }
+function btn_plus_hoch() {
+  navigator.clipboard.writeText(`⁺`);
+  schließen();
+}
+function btn_minus_hoch() {
+  navigator.clipboard.writeText(`⁻`);
+  schließen();
+}
+
 
 
 
@@ -42,6 +51,16 @@ function btn_T() {
   navigator.clipboard.writeText(`₅`);
   schließen();
 }
+function btn_p_lus_tief() {
+  navigator.clipboard.writeText(`₊`);
+  schließen();
+}
+function btn_m_inus_tief() {
+  navigator.clipboard.writeText(`₋`);
+  schließen();
+}
+
+
 
 
 function btn_A() {
@@ -49,10 +68,10 @@ function btn_A() {
   schließen();
 }
 function btn_S() {
-  navigator.clipboard.writeText(`∞ `);
+  navigator.clipboard.writeText(`✓ `);
   schließen();
 }
-
+/*
 function btn_D() {
   navigator.clipboard.writeText(`≈ `);
   schließen();
@@ -67,7 +86,7 @@ function btn_G() {
   navigator.clipboard.writeText(`✓ `);
   schließen();
 }
-
+*/
 
 
 
@@ -113,10 +132,12 @@ function nicht_schließen() {
 
 
 function schließen() {
+  /*
   if (seite_nicht_schließen_boolean === 0){
     window.close();
 
   }
+  */
 }
 
 
@@ -147,6 +168,10 @@ function key_event(key) {
             
     if (key.keyCode == `53`) {btn_5()}
             
+    if (key.keyCode == `187`) {btn_plus_hoch()}
+            
+    if (key.keyCode == `189`) {btn_minus_hoch()}
+            
 
 
     if (key.keyCode == `81`) {btn_Q()}
@@ -159,18 +184,23 @@ function key_event(key) {
             
     if (key.keyCode == `84`) {btn_T()}
             
+    if (key.keyCode == `80`) {btn_p_lus_tief()}
+            
+    if (key.keyCode == `77`) {btn_m_inus_tief()}
+            
+
 
 
     if (key.keyCode == `65`) {btn_A()}
             
     if (key.keyCode == `83`) {btn_S()}
-    
+    /*
     if (key.keyCode == `68`) {btn_D()}
 
     if (key.keyCode == `70`) {btn_F()}
 
     if (key.keyCode == `71`) {btn_G()}
-
+*/
 
 
     if (key.keyCode == `89`) {btn_Y()}
