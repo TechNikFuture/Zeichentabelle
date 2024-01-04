@@ -71,22 +71,7 @@ function btn_S() {
   navigator.clipboard.writeText(`✓ `);
   schließen();
 }
-/*
-function btn_D() {
-  navigator.clipboard.writeText(`≈ `);
-  schließen();
-}
 
-function btn_F() {
-  navigator.clipboard.writeText(`Δ `);
-  schließen();
-}
-
-function btn_G() {
-  navigator.clipboard.writeText(`✓ `);
-  schließen();
-}
-*/
 
 
 
@@ -132,12 +117,12 @@ function nicht_schließen() {
 
 
 function schließen() {
-  /*
+  
   if (seite_nicht_schließen_boolean === 0){
     window.close();
 
   }
-  */
+  
 }
 
 
@@ -194,13 +179,7 @@ function key_event(key) {
     if (key.keyCode == `65`) {btn_A()}
             
     if (key.keyCode == `83`) {btn_S()}
-    /*
-    if (key.keyCode == `68`) {btn_D()}
 
-    if (key.keyCode == `70`) {btn_F()}
-
-    if (key.keyCode == `71`) {btn_G()}
-*/
 
 
     if (key.keyCode == `89`) {btn_Y()}
