@@ -75,6 +75,18 @@ function btn_S() {
 
 
 
+function btn_J() {
+  navigator.clipboard.writeText(`α `);
+  schließen();
+}
+function btn_K() {
+  navigator.clipboard.writeText(`β `);
+  schließen();
+}
+
+
+
+
 
 
 function btn_Y() {
@@ -119,7 +131,7 @@ function nicht_schließen() {
 function schließen() {
   
   if (seite_nicht_schließen_boolean === 0){
-    window.close();
+    //window.close();
 
   }
   
@@ -179,6 +191,12 @@ function key_event(key) {
     if (key.keyCode == `65`) {btn_A()}
             
     if (key.keyCode == `83`) {btn_S()}
+
+
+
+    if (key.keyCode == `74`) {btn_J()}
+            
+    if (key.keyCode == `75`) {btn_K()}
 
 
 
