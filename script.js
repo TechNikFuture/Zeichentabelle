@@ -131,7 +131,7 @@ function nicht_schließen() {
 function schließen() {
   
   if (seite_nicht_schließen_boolean === 0){
-    //window.close();
+    window.close();
 
   }
   
