@@ -1,1 +1,1 @@
-<a href="https://zeichentabelle.netlify.app" target="_blank"> Vokabelseite </a>
+<a href="https://zeichentabelle.netlify.app" target="_blank">Zeichentabelle</a>
