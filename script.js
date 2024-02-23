@@ -97,31 +97,24 @@ function getReplacementChar(char, isSubscript) {
 
 function btn_1() {
   navigator.clipboard.writeText(`¹`);
-  schließen();
 }
 function btn_2() {
   navigator.clipboard.writeText(`²`);
-  schließen();
 }
 function btn_3() {
   navigator.clipboard.writeText(`³`);
-  schließen();
 }
 function btn_4() {
   navigator.clipboard.writeText(`⁴`);
-  schließen();
 }
 function btn_5() {
   navigator.clipboard.writeText(`⁵`);
-  schließen();
 }
 function btn_plus_hoch() {
   navigator.clipboard.writeText(`⁺`);
-  schließen();
 }
 function btn_minus_hoch() {
   navigator.clipboard.writeText(`⁻`);
-  schließen();
 }
 
 
@@ -129,31 +122,24 @@ function btn_minus_hoch() {
 
 function btn_Q() {
   navigator.clipboard.writeText(`₁`);
-  schließen();
 }
 function btn_W() {
   navigator.clipboard.writeText(`₂`);
-  schließen();
 }
 function btn_E() {
   navigator.clipboard.writeText(`₃`);
-  schließen();
 }
 function btn_R() {
   navigator.clipboard.writeText(`₄`);
-  schließen();
 }
 function btn_T() {
   navigator.clipboard.writeText(`₅`);
-  schließen();
 }
 function btn_p_lus_tief() {
   navigator.clipboard.writeText(`₊`);
-  schließen();
 }
 function btn_m_inus_tief() {
   navigator.clipboard.writeText(`₋`);
-  schließen();
 }
 
 
@@ -161,11 +147,9 @@ function btn_m_inus_tief() {
 
 function btn_A() {
   navigator.clipboard.writeText(`➜ `);
-  schließen();
 }
 function btn_S() {
   navigator.clipboard.writeText(`✓ `);
-  schließen();
 }
 
 
@@ -173,11 +157,9 @@ function btn_S() {
 
 function btn_J() {
   navigator.clipboard.writeText(`α `);
-  schließen();
 }
 function btn_K() {
   navigator.clipboard.writeText(`β `);
-  schließen();
 }
 
 
@@ -187,51 +169,30 @@ function btn_K() {
 
 function btn_Y() {
   navigator.clipboard.writeText(`\\color{white}`);
-  schließen();
 }
 
 function btn_X() {
   navigator.clipboard.writeText(`{}`);
-  schließen();
 }
 
 function btn_C() {
   navigator.clipboard.writeText(`\\Delta`);
-  schließen();
 }
 
 function btn_V() {
   navigator.clipboard.writeText(`\\:`);
-  schließen();
 }
 
 function btn_B() {
   navigator.clipboard.writeText(`\\frac { 1 } { 1 }`);
-  schließen();
 }
 
 function btn_N() {
   navigator.clipboard.writeText(`\\sqrt { a }`);
-  schließen();
 }
 
 
 
-seite_nicht_schließen_boolean = 0
-
-function nicht_schließen() {
-  seite_nicht_schließen_boolean = 1
-}
-
-
-function schließen() {
-  
-  if (seite_nicht_schließen_boolean === 0){
-    window.close();
-
-  }
-  
-}
 
 
 
@@ -245,12 +206,7 @@ window.addEventListener(`keydown`, key_event, false)
 function key_event(key) {
        
 
-  if (key.keyCode == `32`) {nicht_schließen()}
 
-
-
-
-    
     if (key.keyCode == `49`) {btn_1()}
       
     if (key.keyCode == `50`) {btn_2()}
