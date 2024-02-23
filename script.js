@@ -8,16 +8,17 @@ function updateValue(e) {
   log.textContent = modifiedInput;
 }
 
-function copybtn() {
+function copy_btn() {
   const inputValue = document.getElementById("input").value;
   const result = checkIfContains(inputValue);
-  // Hier solltest du `result` irgendwo verwenden, z.B. es in einem anderen Element anzeigen
+  navigator.clipboard.writeText(result);
 }
+
 
 function checkIfContains(inputValue) {
     let modifiedInput = inputValue;
   
-    // Ersetze "->" durch "➜"
+
     modifiedInput = modifiedInput.replace(/->/g, "➜");
   
     modifiedInput = replaceCharacters(modifiedInput, "_", true);
@@ -50,17 +51,6 @@ function getReplacementChar(char, isSubscript) {
   };
   return replacements[char] || char;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
