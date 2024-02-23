@@ -254,5 +254,8 @@ function key_event(key) {
 
     if (key.keyCode == `78`) {btn_N()}
     
+    
 
+
+    if (key.keyCode == `13`) {copy_btn()}
     }
