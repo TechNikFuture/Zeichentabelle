@@ -1,6 +1,3 @@
-// Hallo Marcel
-
-
 const inputElement = document.querySelector("input");
 const log = document.getElementById("input_anzeige");
 
