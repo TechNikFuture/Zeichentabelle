@@ -13,7 +13,7 @@ function copy_btn() {
   const result = checkIfContains(inputValue);
   navigator.clipboard.writeText(result);
 }
-//nigga
+
 
 
 function checkIfContains(inputValue) {
