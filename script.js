@@ -65,32 +65,6 @@ function getReplacementChar(char, isSubscript) {
 
 
 
-
-async function test_copy() {
-  text_from_clipboard = await navigator.clipboard.readText();
-  document.getElementById("input_anzeige").innerHTML = text_from_clipboard;
-}
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function btn_1() {
   navigator.clipboard.writeText(`¹`);
 }
@@ -195,12 +169,21 @@ function btn_N() {
 
 
 
-shift_aktiv = false
+
+
 
 window.addEventListener(`keydown`, key_event, false)
 
+
+function detect_if_input_is_focused() {
+  activeElement = document.activeElement;
+  input_is_focused = activeElement.toString().includes(`[object HTMLInputElement]`);
+}
+
+
 function key_event(key) {
-       
+  detect_if_input_is_focused()
+  if (input_is_focused == false) {
 
 
     if (key.keyCode == `49`) {btn_1()}
@@ -263,9 +246,8 @@ function key_event(key) {
     
 
 
-    if (key.keyCode == `13`) {copy_btn()}
-
-    if (key.keyCode == `226`) {test_copy()}
-
-
+    
+    
+  }
+  if (key.keyCode == `13`) {copy_btn()}
   }
