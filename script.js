@@ -66,6 +66,11 @@ function getReplacementChar(char, isSubscript) {
 
 
 
+async function test_copy() {
+  text_from_clipboard = await navigator.clipboard.readText();
+  document.getElementById("input_anzeige").innerHTML = text_from_clipboard;
+}
+  
 
 
 
@@ -259,4 +264,8 @@ function key_event(key) {
 
 
     if (key.keyCode == `13`) {copy_btn()}
-    }
+
+    if (key.keyCode == `226`) {test_copy()}
+
+
+  }
