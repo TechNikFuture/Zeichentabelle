@@ -3,19 +3,18 @@
 body {
   font-family: 'Laila';
   background-color: #302e2d;
-  font-size: 90%;
 
 }
 
 
 
-/*
+
 .container {
 display: block;
 margin-left: auto;
 margin-right: auto;
 }
-*/
+
 
 
 
@@ -134,16 +133,14 @@ margin-right: 5%;
 .preview-btn {
   margin: 10px;
 
-  min-width: 65px;
-  max-width: 100px;
+  width: 25px;
   border: none;
   color: rgb(255, 255, 255);
   padding: 10px 22px;
-  text-align: center;
   text-decoration: none;
   display: inline-block;
   font-family: 'Laila';
-  font-size: 22px;
+  font-size: 15px;
   cursor: pointer;
 
   border-radius: 0.6rem;
@@ -154,10 +151,20 @@ margin-right: 5%;
 }
 
 
-.preview-btn:hover {
-  background: rgb(122, 120, 120);
-  color: white
+.preview_btn_groß {
+  min-width: 80px;
 }
+
+
+
+
+.preview_btn_groß:hover {
+  background: rgb(122, 120, 120);
+  color: white;
+}
+
+
+
 
 
 
@@ -269,10 +276,15 @@ margin-right: 5%;
   font-family: 'Laila';
   font-size: 25px;
   color: rgb(255, 255, 255);
+
   margin: 15px;
   margin-top: 25px;
-  margin-right: 120.5px;
+  margin-left: 40%;
+  width: 600px;
+
   user-select: text;
+
+  text-align: left;
 }
 
 

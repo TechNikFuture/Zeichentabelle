@@ -71,79 +71,6 @@ function getReplacementChar(char, isSubscript) {
 
 
 
-function btn_1() {
-  navigator.clipboard.writeText(`¹`);
-}
-function btn_2() {
-  navigator.clipboard.writeText(`²`);
-}
-function btn_3() {
-  navigator.clipboard.writeText(`³`);
-}
-function btn_4() {
-  navigator.clipboard.writeText(`⁴`);
-}
-function btn_5() {
-  navigator.clipboard.writeText(`⁵`);
-}
-function btn_plus_hoch() {
-  navigator.clipboard.writeText(`⁺`);
-}
-function btn_minus_hoch() {
-  navigator.clipboard.writeText(`⁻`);
-}
-
-
-
-
-function btn_Q() {
-  navigator.clipboard.writeText(`₁`);
-}
-function btn_W() {
-  navigator.clipboard.writeText(`₂`);
-}
-function btn_E() {
-  navigator.clipboard.writeText(`₃`);
-}
-function btn_R() {
-  navigator.clipboard.writeText(`₄`);
-}
-function btn_T() {
-  navigator.clipboard.writeText(`₅`);
-}
-function btn_p_lus_tief() {
-  navigator.clipboard.writeText(`₊`);
-}
-function btn_m_inus_tief() {
-  navigator.clipboard.writeText(`₋`);
-}
-
-
-
-
-function btn_A() {
-  navigator.clipboard.writeText(`➜`);
-}
-function btn_S() {
-  navigator.clipboard.writeText(`✓ `);
-}
-function btn_D() {
-  navigator.clipboard.writeText(`≙`);
-}
-
-
-
-
-function btn_J() {
-  navigator.clipboard.writeText(`α `);
-}
-function btn_K() {
-  navigator.clipboard.writeText(`β `);
-}
-
-
-
-
 
 
 function btn_Y() {
@@ -197,48 +124,6 @@ function key_event(key) {
   if (input_is_focused == false) {
 
 
-    if (key.keyCode == `49`) {btn_1()}
-      
-    if (key.keyCode == `50`) {btn_2()}
-        
-    if (key.keyCode == `51`) {btn_3()}
-        
-    if (key.keyCode == `52`) {btn_4()}
-            
-    if (key.keyCode == `53`) {btn_5()}
-            
-    if (key.keyCode == `187`) {btn_plus_hoch()}
-            
-    if (key.keyCode == `189`) {btn_minus_hoch()}
-            
-
-
-    if (key.keyCode == `81`) {btn_Q()}
-
-    if (key.keyCode == `87`) {btn_W()}
-            
-    if (key.keyCode == `69`) {btn_E()}
-            
-    if (key.keyCode == `82`) {btn_R()}
-            
-    if (key.keyCode == `84`) {btn_T()}
-            
-    if (key.keyCode == `80`) {btn_p_lus_tief()}
-            
-    if (key.keyCode == `77`) {btn_m_inus_tief()}
-            
-
-
-
-    if (key.keyCode == `65`) {btn_A()}
-            
-    if (key.keyCode == `83`) {btn_S()}
-
-
-
-    if (key.keyCode == `74`) {btn_J()}
-            
-    if (key.keyCode == `75`) {btn_K()}
 
 
 
@@ -257,11 +142,6 @@ function key_event(key) {
     
 
 
-    
-    
-    if (key.keyCode == `13`) {
-      copy_btn() 
-    }
     
   }
 }
