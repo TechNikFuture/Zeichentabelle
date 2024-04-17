@@ -272,4 +272,10 @@ margin-right: 5%;
   margin: 15px;
   margin-top: 25px;
   margin-right: 120.5px;
+  user-select: text;
+}
+
+
+.formatierung_zum_kopieren {
+  font-size: 15px;
 }

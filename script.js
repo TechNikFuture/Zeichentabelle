@@ -8,7 +8,13 @@ function updateValue(e) {
   log.textContent = modifiedInput;
 }
 
+input_anzeige = document.getElementsByClassName('input_anzeige')
+
+
+
 function copy_btn() {
+  input_anzeige[0].classList.add('formatierung_zum_kopieren');
+
   const inputValue = document.getElementById("input").value;
   const result = checkIfContains(inputValue);
   navigator.clipboard.writeText(result);
@@ -116,10 +122,13 @@ function btn_m_inus_tief() {
 
 
 function btn_A() {
-  navigator.clipboard.writeText(`➜ `);
+  navigator.clipboard.writeText(`➜`);
 }
 function btn_S() {
   navigator.clipboard.writeText(`✓ `);
+}
+function btn_D() {
+  navigator.clipboard.writeText(`≙`);
 }
 
 
@@ -182,6 +191,8 @@ function detect_if_input_is_focused() {
 
 
 function key_event(key) {
+  input_anzeige[0].classList.remove('formatierung_zum_kopieren');
+
   detect_if_input_is_focused()
   if (input_is_focused == false) {
 
@@ -248,6 +259,35 @@ function key_event(key) {
 
     
     
+    if (key.keyCode == `13`) {
+      copy_btn() 
+    }
+    
   }
-  if (key.keyCode == `13`) {copy_btn()}
-  }
+}
+
+
+
+
+function unfocus_on_enter(event) {
+    // inputField = document.getElementById("input");
+    // inputField.blur();
+
+    if (event.key === 'Enter') {
+      inputField = document.getElementById("input");
+      inputField.blur();
+      var input_anzeige_t = document.getElementById("input_anzeige");
+
+      
+      var selection = window.getSelection();  
+      var range = document.createRange();      
+      range.selectNodeContents(input_anzeige_t);  
+      selection.removeAllRanges();  
+      selection.addRange(range);  
+
+
+
+
+    }
+
+}

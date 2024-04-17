@@ -12,7 +12,7 @@
 
     <div class="banner">
 
-        <input type="text" id="input" placeholder="_ = Tiefgestellt;    ^ = Hochgestellt" class="input" autocomplete="off"/>
+        <input type="text" id="input" placeholder="_ = Tiefgestellt;    ^ = Hochgestellt" class="input" autocomplete="off" onkeydown="unfocus_on_enter(event)" />
         <button class="copy_btn" onclick="copy_btn()">Copy</button>
         <p id="input_anzeige" class="input_anzeige"></p>
     </div>
@@ -50,8 +50,9 @@
 <br><br><br>
 
 <div class="parent">
-<a class="preview-btn" onclick="btn_A()">A: ➜_</a> 
+<a class="preview-btn" onclick="btn_A()">A: ➜</a> 
 <a class="preview-btn" onclick="btn_S()">S: ✓_</a> 
+<a class="preview-btn" onclick="btn_D()">D: ≙</a> 
 </div>
 <br><br><br>
 <div class="parent">
