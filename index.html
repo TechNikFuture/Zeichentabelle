@@ -13,6 +13,7 @@
     <div class="banner">
 
         <input type="text" id="input" placeholder="_ = Tiefgestellt;    ^ = Hochgestellt" class="input" autocomplete="off" onkeydown="unfocus_on_enter(event)" />
+        <button class="copy_btn" onclick="copy_btn()">Copy</button>
         <p id="input_anzeige" class="input_anzeige"></p>
     </div>
 
@@ -22,38 +23,41 @@
 
     
 
+
+
+
+
 <div class="parent">
-<a class="preview-btn" >¹</a> 
-<a class="preview-btn" >²</a> 
-<a class="preview-btn" >³</a> 
-<a class="preview-btn" >⁴</a> 
-<a class="preview-btn" >⁵</a> 
-<a class="preview-btn" >⁺</a> 
-<a class="preview-btn" >⁻</a> 
+<a class="preview-btn" onclick="btn_1()">1: ¹</a> 
+<a class="preview-btn" onclick="btn_2()">2: ²</a> 
+<a class="preview-btn" onclick="btn_3()">3: ³</a> 
+<a class="preview-btn" onclick="btn_4()">4: ⁴</a> 
+<a class="preview-btn" onclick="btn_5()">5: ⁵</a> 
+<a class="preview-btn" onclick="btn_plus_hoch()">+: ⁺</a> 
+<a class="preview-btn" onclick="btn_minus_hoch()">-: ⁻</a> 
 </div>
 <br>
 
 <div class="parent">
-<a class="preview-btn">₁</a> 
-<a class="preview-btn">₂</a> 
-<a class="preview-btn">₃</a> 
-<a class="preview-btn">₄</a> 
-<a class="preview-btn">₅</a> 
-<a class="preview-btn">₊</a> 
-<a class="preview-btn">₋</a> 
+<a class="preview-btn" onclick="btn_Q()">Q: ₁</a> 
+<a class="preview-btn" onclick="btn_W()">W: ₂</a> 
+<a class="preview-btn" onclick="btn_E()">E: ₃</a> 
+<a class="preview-btn" onclick="btn_R()">R: ₄</a> 
+<a class="preview-btn" onclick="btn_T()">T: ₅</a> 
+<a class="preview-btn" onclick="btn_p_lus_tief()">p: ₊</a> 
+<a class="preview-btn" onclick="btn_m_inus_tief()">m: ₋</a> 
 </div>
 <br><br><br>
 
 <div class="parent">
-<a class="preview-btn">➜</a> 
-<a class="preview-btn">✓</a> 
-<a class="preview-btn">≙</a> 
+<a class="preview-btn" onclick="btn_A()">A: ➜</a> 
+<a class="preview-btn" onclick="btn_S()">S: ✓_</a> 
+<a class="preview-btn" onclick="btn_D()">D: ≙</a> 
 </div>
 <br><br><br>
 <div class="parent">
-<a class="preview-btn">α</a> 
-<a class="preview-btn">β</a> 
-<a class="preview-btn">Δ</a> 
+<a class="preview-btn" onclick="btn_J()">J: α_</a> 
+<a class="preview-btn" onclick="btn_K()">K: β_</a> 
 </div>
 
 <br><br><br>
@@ -62,12 +66,12 @@
 </div>
 
 <div class="parent">
-<a class="preview-btn preview_btn_groß" onclick="btn_Y()">Y: !</a> 
-<a class="preview-btn preview_btn_groß" onclick="btn_X()">X: {}</a> 
-<a class="preview-btn preview_btn_groß" onclick="btn_C()">C: Δ</a> 
-<a class="preview-btn preview_btn_groß" onclick="btn_V()">V: _</a> 
-<a class="preview-btn preview_btn_groß" onclick="btn_B()">B: Frac</a> 
-<a class="preview-btn preview_btn_groß" onclick="btn_N()">N: Sqrt</a> 
+<a class="preview-btn" onclick="btn_Y()">Y: !</a> 
+<a class="preview-btn" onclick="btn_X()">X: {}</a> 
+<a class="preview-btn" onclick="btn_C()">C: Δ</a> 
+<a class="preview-btn" onclick="btn_V()">V: _</a> 
+<a class="preview-btn" onclick="btn_B()">B: Frac</a> 
+<a class="preview-btn" onclick="btn_N()">N: Sqrt</a> 
 
 </div>
 
