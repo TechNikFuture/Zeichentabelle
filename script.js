@@ -126,7 +126,7 @@ function btn_S() {
   navigator.clipboard.writeText(`✓ `);
 }
 function btn_D() {
-  navigator.clipboard.writeText(`≙`);
+  navigator.clipboard.writeText(`≙ `);
 }
 
 
