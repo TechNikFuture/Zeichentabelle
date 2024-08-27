@@ -120,7 +120,7 @@ function btn_m_inus_tief() {
 
 
 function btn_A() {
-  navigator.clipboard.writeText(`➜`);
+  navigator.clipboard.writeText(`➜ `);
 }
 function btn_S() {
   navigator.clipboard.writeText(`✓ `);
